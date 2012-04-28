@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6E1758A154C37710082E6C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E17589154C37710082E6C5 /* UIKit.framework */; };
+		F6E1758C154C37710082E6C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E1758B154C37710082E6C5 /* Foundation.framework */; };
+		F6E1758E154C37710082E6C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E1758D154C37710082E6C5 /* CoreGraphics.framework */; };
+		F6E17594154C37710082E6C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6E17592154C37710082E6C5 /* InfoPlist.strings */; };
+		F6E17596154C37710082E6C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E17595154C37710082E6C5 /* main.m */; };
+		F6E1759A154C37710082E6C5 /* TGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E17599154C37710082E6C5 /* TGAppDelegate.m */; };
+		F6E1759D154C37710082E6C5 /* TGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E1759C154C37710082E6C5 /* TGViewController.m */; };
+		F6E175A0154C37710082E6C5 /* TGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E1759E154C37710082E6C5 /* TGViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F6E17585154C37710082E6C5 /* aPlane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aPlane.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E17589154C37710082E6C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F6E1758B154C37710082E6C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6E1758D154C37710082E6C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F6E17591154C37710082E6C5 /* aPlane-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "aPlane-Info.plist"; sourceTree = "<group>"; };
+		F6E17593154C37710082E6C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6E17595154C37710082E6C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6E17597154C37710082E6C5 /* aPlane-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aPlane-Prefix.pch"; sourceTree = "<group>"; };
+		F6E17598154C37710082E6C5 /* TGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGAppDelegate.h; sourceTree = "<group>"; };
+		F6E17599154C37710082E6C5 /* TGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGAppDelegate.m; sourceTree = "<group>"; };
+		F6E1759B154C37710082E6C5 /* TGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGViewController.h; sourceTree = "<group>"; };
+		F6E1759C154C37710082E6C5 /* TGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGViewController.m; sourceTree = "<group>"; };
+		F6E1759F154C37710082E6C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TGViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6E17582154C37710082E6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E1758A154C37710082E6C5 /* UIKit.framework in Frameworks */,
+				F6E1758C154C37710082E6C5 /* Foundation.framework in Frameworks */,
+				F6E1758E154C37710082E6C5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6E1757A154C37700082E6C5 = {
+			isa = PBXGroup;
+			children = (
+				F6E1758F154C37710082E6C5 /* aPlane */,
+				F6E17588154C37710082E6C5 /* Frameworks */,
+				F6E17586154C37710082E6C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6E17586154C37710082E6C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6E17585154C37710082E6C5 /* aPlane.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6E17588154C37710082E6C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6E17589154C37710082E6C5 /* UIKit.framework */,
+				F6E1758B154C37710082E6C5 /* Foundation.framework */,
+				F6E1758D154C37710082E6C5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6E1758F154C37710082E6C5 /* aPlane */ = {
+			isa = PBXGroup;
+			children = (
+				F6E17598154C37710082E6C5 /* TGAppDelegate.h */,
+				F6E17599154C37710082E6C5 /* TGAppDelegate.m */,
+				F6E1759B154C37710082E6C5 /* TGViewController.h */,
+				F6E1759C154C37710082E6C5 /* TGViewController.m */,
+				F6E1759E154C37710082E6C5 /* TGViewController.xib */,
+				F6E17590154C37710082E6C5 /* Supporting Files */,
+			);
+			path = aPlane;
+			sourceTree = "<group>";
+		};
+		F6E17590154C37710082E6C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6E17591154C37710082E6C5 /* aPlane-Info.plist */,
+				F6E17592154C37710082E6C5 /* InfoPlist.strings */,
+				F6E17595154C37710082E6C5 /* main.m */,
+				F6E17597154C37710082E6C5 /* aPlane-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6E17584154C37710082E6C5 /* aPlane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6E175A3154C37710082E6C5 /* Build configuration list for PBXNativeTarget "aPlane" */;
+			buildPhases = (
+				F6E17581154C37710082E6C5 /* Sources */,
+				F6E17582154C37710082E6C5 /* Frameworks */,
+				F6E17583154C37710082E6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aPlane;
+			productName = aPlane;
+			productReference = F6E17585154C37710082E6C5 /* aPlane.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6E1757C154C37700082E6C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TG;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = private;
+			};
+			buildConfigurationList = F6E1757F154C37700082E6C5 /* Build configuration list for PBXProject "aPlane" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6E1757A154C37700082E6C5;
+			productRefGroup = F6E17586154C37710082E6C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6E17584154C37710082E6C5 /* aPlane */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6E17583154C37710082E6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E17594154C37710082E6C5 /* InfoPlist.strings in Resources */,
+				F6E175A0154C37710082E6C5 /* TGViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6E17581154C37710082E6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E17596154C37710082E6C5 /* main.m in Sources */,
+				F6E1759A154C37710082E6C5 /* TGAppDelegate.m in Sources */,
+				F6E1759D154C37710082E6C5 /* TGViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6E17592154C37710082E6C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E17593154C37710082E6C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6E1759E154C37710082E6C5 /* TGViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E1759F154C37710082E6C5 /* en */,
+			);
+			name = TGViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6E175A1154C37710082E6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F6E175A2154C37710082E6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6E175A4154C37710082E6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aPlane/aPlane-Prefix.pch";
+				INFOPLIST_FILE = "aPlane/aPlane-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F6E175A5154C37710082E6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "aPlane/aPlane-Prefix.pch";
+				INFOPLIST_FILE = "aPlane/aPlane-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6E1757F154C37700082E6C5 /* Build configuration list for PBXProject "aPlane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E175A1154C37710082E6C5 /* Debug */,
+				F6E175A2154C37710082E6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6E175A3154C37710082E6C5 /* Build configuration list for PBXNativeTarget "aPlane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E175A4154C37710082E6C5 /* Debug */,
+				F6E175A5154C37710082E6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6E1757C154C37700082E6C5 /* Project object */;
+}
