@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6BD851D1577BFBC00DC4398 /* TGThing.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BD851C1577BFBC00DC4398 /* TGThing.m */; };
 		F6E1758A154C37710082E6C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E17589154C37710082E6C5 /* UIKit.framework */; };
 		F6E1758C154C37710082E6C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E1758B154C37710082E6C5 /* Foundation.framework */; };
 		F6E1758E154C37710082E6C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E1758D154C37710082E6C5 /* CoreGraphics.framework */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6BD851B1577BFBC00DC4398 /* TGThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGThing.h; sourceTree = "<group>"; };
+		F6BD851C1577BFBC00DC4398 /* TGThing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGThing.m; sourceTree = "<group>"; };
 		F6E17585154C37710082E6C5 /* aPlane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aPlane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E17589154C37710082E6C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F6E1758B154C37710082E6C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6BD85191577BF7A00DC4398 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD851B1577BFBC00DC4398 /* TGThing.h */,
+				F6BD851C1577BFBC00DC4398 /* TGThing.m */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
 		F6E1757A154C37700082E6C5 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +89,7 @@
 		F6E1758F154C37710082E6C5 /* aPlane */ = {
 			isa = PBXGroup;
 			children = (
+				F6BD85191577BF7A00DC4398 /* data */,
 				F6E17598154C37710082E6C5 /* TGAppDelegate.h */,
 				F6E17599154C37710082E6C5 /* TGAppDelegate.m */,
 				F6E1759B154C37710082E6C5 /* TGViewController.h */,
@@ -165,6 +178,7 @@
 				F6E17596154C37710082E6C5 /* main.m in Sources */,
 				F6E1759A154C37710082E6C5 /* TGAppDelegate.m in Sources */,
 				F6E1759D154C37710082E6C5 /* TGViewController.m in Sources */,
+				F6BD851D1577BFBC00DC4398 /* TGThing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +290,7 @@
 				F6E175A5154C37710082E6C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
