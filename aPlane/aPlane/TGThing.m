@@ -11,7 +11,7 @@
 @implementation TGThing
 - (id)init:(NSString *)content :(NSData *)date {
     if ( self=[super init] ){
-        //TODO here
+        //TODO AGAIN here
     }
     return self;
 }
