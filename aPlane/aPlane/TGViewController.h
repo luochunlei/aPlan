@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface TGViewController : UIViewController
+{
+}
+
+- (void) readData;
 
 @end

@@ -17,7 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    [self readData];
 }
 
 - (void)viewDidUnload
@@ -30,5 +31,12 @@
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
+
+///////////////////////////////////////////////
+// My functions.
+- (void) readData {
+    
+}
+
 
 @end
