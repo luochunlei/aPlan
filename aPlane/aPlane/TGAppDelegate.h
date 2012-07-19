@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+// 系统自动生成，目前不用修改。
+
 @class TGViewController;
 
 @interface TGAppDelegate : UIResponder <UIApplicationDelegate>

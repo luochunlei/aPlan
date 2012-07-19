@@ -10,6 +10,8 @@
 
 #import "TGViewController.h"
 
+// 系统自动生成，目前不进行修改。 ß
+
 @implementation TGAppDelegate
 
 @synthesize window = _window;
