@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6B8A68615BC3B0D00F38994 /* todo.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6B8A68515BC3B0D00F38994 /* todo.txt */; };
 		F6BD851D1577BFBC00DC4398 /* TGThing.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BD851C1577BFBC00DC4398 /* TGThing.m */; };
 		F6E1758A154C37710082E6C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E17589154C37710082E6C5 /* UIKit.framework */; };
 		F6E1758C154C37710082E6C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E1758B154C37710082E6C5 /* Foundation.framework */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6B8A68515BC3B0D00F38994 /* todo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todo.txt; sourceTree = "<group>"; };
 		F6BD851B1577BFBC00DC4398 /* TGThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGThing.h; sourceTree = "<group>"; };
 		F6BD851C1577BFBC00DC4398 /* TGThing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGThing.m; sourceTree = "<group>"; };
 		F6E17585154C37710082E6C5 /* aPlane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aPlane.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 		F6E1757A154C37700082E6C5 = {
 			isa = PBXGroup;
 			children = (
+				F6B8A68515BC3B0D00F38994 /* todo.txt */,
 				F6E1758F154C37710082E6C5 /* aPlane */,
 				F6E17588154C37710082E6C5 /* Frameworks */,
 				F6E17586154C37710082E6C5 /* Products */,
@@ -165,6 +168,7 @@
 			files = (
 				F6E17594154C37710082E6C5 /* InfoPlist.strings in Resources */,
 				F6E175A0154C37710082E6C5 /* TGViewController.xib in Resources */,
+				F6B8A68615BC3B0D00F38994 /* todo.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

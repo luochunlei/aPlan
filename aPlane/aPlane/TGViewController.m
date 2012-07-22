@@ -14,11 +14,6 @@
 
 @implementation TGViewController
 
-/* 界面设计
- * 首先从最简单的开始入手，整个界面就是显示一个列表，每个项目是任务。
- * 在最上方有一个工具栏，显示可以进行的功能：添加、删除。
- * 点击其中一个记录，扩大显示详细信息。点击其他的地方，回到列表状态。
- */
 - (void)loadView {
     CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
     _screenWidth = screenRect.size.width;
