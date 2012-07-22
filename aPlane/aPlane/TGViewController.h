@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "TGThing.h"
+
 // Controller负责画面和业务，全部都包括。
 
 @interface TGViewController : UIViewController
@@ -18,9 +20,16 @@
     
     //控件：命名方式 _typeName
     UIToolbar * _toolbarHeader;
+    
+    //内部的数据管理类。
+    TGThings * _things;
 }
 
-- (void)addPlan;
-- (void)delPlan;
+- (UIView *) createView;
+- (void) loadData2View;
+
+- (void) createTestThings;
+- (void) addPlan;
+- (void) delPlan;
 
 @end

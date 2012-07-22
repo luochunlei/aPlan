@@ -15,6 +15,21 @@
 @implementation TGViewController
 
 - (void)loadView {
+    
+    //画面初始化前，先创建数据。
+    [self createTestThings];
+    
+    // 构筑画面。
+    UIView * contentView = [self createView];
+    
+    // 然后再在画面上加载数据
+    [self loadData2View];
+    
+    self.view = contentView;
+}
+
+- (UIView *) createView {
+    
     CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
     _screenWidth = screenRect.size.width;
     _screenHeight = screenRect.size.height;
@@ -36,7 +51,7 @@
     [toolBarItems addObject:_baritemAdd];
     
     [toolBarItems addObject:
-        [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil]];
+     [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil]];
     
     //按钮“删除”
     UIBarButtonItem * _baritemDel = [[UIBarButtonItem alloc] initWithTitle:@"删除" style:UIBarButtonItemStylePlain target:self action:@selector(delPlan)];
@@ -48,9 +63,14 @@
     
     _toolbarHeader.items = toolBarItems;
     
-    //添加任务列表 TODO
+    // 添加任务列表 TODO
+
     
-    self.view = contentView;
+    return contentView;
+}
+
+- (void) loadData2View {
+
 }
 
 - (void)viewDidUnload
@@ -67,11 +87,41 @@
 #pragma mark -
 #pragma mark 业务处理方法
 
-- (void)addPlan {
+//生成测试使用的计划。
+- (void) createTestThings {
+    
+    _things = [[TGThings alloc] init];
+    
+    TGThing * thing;
+    //NSCalendar * calendar;
+    
+    NSDateComponents * dc = [[NSDateComponents alloc] init];
+    [dc setYear:2012];
+    [dc setMonth:07];
+    [dc setDay:22];
+    [dc setHour:23];
+    [dc setMinute:00];
+    
+    thing = [[TGThing alloc] initContent:@"test1" byCalendar:dc];
+    [_things add:thing];
+    
+    [dc setHour:2];
+    [dc setMinute:10];
+    thing = [[TGThing alloc] initContent:@"test2" byCalendar:dc];
+    [_things add:thing];
+    
+    [dc setHour:4];
+    [dc setMinute:30];
+    thing = [[TGThing alloc] initContent:@"test3" byCalendar:dc];
+    [_things add:thing];
     
 }
 
-- (void)delPlan {
+- (void) addPlan {
+    
+}
+
+- (void) delPlan {
 
 }
 
