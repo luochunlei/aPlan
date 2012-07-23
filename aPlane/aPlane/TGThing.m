@@ -17,7 +17,7 @@
 - (id) initContent:(NSString *)content 
             byCalendar:(NSDateComponents *)datetime {
     if ( self=[super init] ){
-        _content = @"";
+        _content = [content mutableCopy];
         _datetime = [self cloneDate:datetime];
         
     }

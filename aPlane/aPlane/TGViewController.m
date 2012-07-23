@@ -30,14 +30,17 @@
 
 - (UIView *) createView {
     
+    // 取得可用屏幕大小后，开始设定各种控件的尺寸大小。
     CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
     _screenWidth = screenRect.size.width;
     _screenHeight = screenRect.size.height;
     
+    _toolbarHeight = 30;
+    
     UIView * contentView = [[UIView alloc] initWithFrame:screenRect];
     
     //工具栏
-    _toolbarHeader = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, _screenWidth, 30)];
+    _toolbarHeader = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, _screenWidth, _toolbarHeight)];
     [contentView addSubview:_toolbarHeader];
     
     NSMutableArray * toolBarItems = [NSMutableArray array];
@@ -64,9 +67,12 @@
     _toolbarHeader.items = toolBarItems;
     
     // 添加任务列表
+    tableControl = [[TGThingsTableController alloc] initByData:_things];
+    [tableControl.tableView setFrame:CGRectMake(0, _toolbarHeight, _screenWidth, _screenHeight - _toolbarHeight)];
     
-
+    [contentView addSubview:tableControl.tableView];
     
+    // 返回内容控件。
     return contentView;
 }
 

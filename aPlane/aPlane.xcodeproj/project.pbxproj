@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F6B8A68615BC3B0D00F38994 /* todo.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6B8A68515BC3B0D00F38994 /* todo.txt */; };
 		F6BD851D1577BFBC00DC4398 /* TGThing.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BD851C1577BFBC00DC4398 /* TGThing.m */; };
+		F6C2F7C315BD988F00F353F2 /* TGThingsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C2F7C215BD988F00F353F2 /* TGThingsTableController.m */; };
 		F6E1758A154C37710082E6C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E17589154C37710082E6C5 /* UIKit.framework */; };
 		F6E1758C154C37710082E6C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E1758B154C37710082E6C5 /* Foundation.framework */; };
 		F6E1758E154C37710082E6C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E1758D154C37710082E6C5 /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 		F6B8A68515BC3B0D00F38994 /* todo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todo.txt; sourceTree = "<group>"; };
 		F6BD851B1577BFBC00DC4398 /* TGThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGThing.h; sourceTree = "<group>"; };
 		F6BD851C1577BFBC00DC4398 /* TGThing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGThing.m; sourceTree = "<group>"; };
+		F6C2F7C115BD988F00F353F2 /* TGThingsTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGThingsTableController.h; sourceTree = "<group>"; };
+		F6C2F7C215BD988F00F353F2 /* TGThingsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGThingsTableController.m; sourceTree = "<group>"; };
 		F6E17585154C37710082E6C5 /* aPlane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aPlane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E17589154C37710082E6C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F6E1758B154C37710082E6C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +101,8 @@
 				F6E1759B154C37710082E6C5 /* TGViewController.h */,
 				F6E1759C154C37710082E6C5 /* TGViewController.m */,
 				F6E1759E154C37710082E6C5 /* TGViewController.xib */,
+				F6C2F7C115BD988F00F353F2 /* TGThingsTableController.h */,
+				F6C2F7C215BD988F00F353F2 /* TGThingsTableController.m */,
 				F6E17590154C37710082E6C5 /* Supporting Files */,
 			);
 			path = aPlane;
@@ -183,6 +188,7 @@
 				F6E1759A154C37710082E6C5 /* TGAppDelegate.m in Sources */,
 				F6E1759D154C37710082E6C5 /* TGViewController.m in Sources */,
 				F6BD851D1577BFBC00DC4398 /* TGThing.m in Sources */,
+				F6C2F7C315BD988F00F353F2 /* TGThingsTableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
