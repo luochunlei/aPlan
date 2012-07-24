@@ -7,6 +7,8 @@
 //
 
 #import "TGThingsTableController.h"
+#import "TGNormalTableVeiwCell.h"
+#import "TGEditTableViewCell.h"
 
 @interface TGThingsTableController ()
 
@@ -58,33 +60,45 @@
     return [_things.list count];
 }
 
+// 内部使用自定义的CELL来显示内容。
+// 如果正常显示用Normal，如果是编辑用Editor。
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"Cell";
-    //申请一个可以复用的CELL，如果没有找到，就自己建立一个。
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) { 
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle 
-                                       reuseIdentifier:CellIdentifier]; 
-    } 
     
     // 一般我们就可以在这开始设置这个cell了，比如设置文字等： 
     TGThing * thing = [_things.list objectAtIndex:indexPath.row];
     
+    static NSString *NormalCellIdentifier = @"NormalCell";
+    static NSString *EditCellIdentifier = @"EditCell";
+    
+    //申请一个可以复用的CELL，如果没有找到，就自己建立一个。
+    TGEditTableViewCell *cell = (TGEditTableViewCell*)[tableView dequeueReusableCellWithIdentifier:NormalCellIdentifier];
+    if (cell == nil) { 
+        //cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle 
+        //                               reuseIdentifier:CellIdentifier]; 
+        //cell = [[TGNormalTableVeiwCell alloc ] init];
+        cell = [[TGEditTableViewCell alloc ] init];
+    } 
+    
+    NSDateFormatter * df = [NSDateFormatter new];
+    [df setDateFormat:@"yyyy年MM月dd日 HH时mm分ss秒"];
+    NSCalendar * calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDate * date = [calendar dateFromComponents:thing.datetime];
+    NSString * strDate = [df stringFromDate:date];
+    cell.lblDate.text = strDate;
+
+    cell.lblContent.text = thing.content;
+    
+    /*
     //标题文字(这个以后用来显示类型)
     cell.textLabel.text = thing.content;
     //[cell.textLabel setFont:[UIFont fontWithName:@"Georgia"size:27]];
     [cell.textLabel setTextColor:[UIColor blueColor]];
     
     //详细内容（用来显示具体的信息）
-    NSDateFormatter * df = [NSDateFormatter new];
-    [df setDateFormat:@"yyyy年MM月dd日 HH时mm分ss秒"];
-    NSCalendar * calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDate * date = [calendar dateFromComponents:thing.datetime];
-    NSString * detail = [df stringFromDate:date];
-    cell.detailTextLabel.text = detail;
-    [cell.detailTextLabel setTextColor:[UIColor blackColor]];
+        [cell.detailTextLabel setTextColor:[UIColor blackColor]];
     
     //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+     */
     
     return cell;
 }

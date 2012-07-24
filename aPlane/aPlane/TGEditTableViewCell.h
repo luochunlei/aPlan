@@ -1,5 +1,5 @@
 //
-//  TGNormalTableVeiwCell.h
+//  TGEditTableViewCellCell.h
 //  aPlane
 //
 //  Created by 春雷 罗 on 12-7-24.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-// 自定义的，一般情况下的表格一行的控件。
-// 显示样式：显示内容和对应的时间。
-@interface TGNormalTableVeiwCell : UITableViewCell
+//编辑状态下，表格的CELL
+@interface TGEditTableViewCell : UITableViewCell
 
 // 显示详细内容。
 @property(nonatomic,retain) UILabel *lblContent;  

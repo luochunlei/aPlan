@@ -11,7 +11,7 @@
 		F6BD851D1577BFBC00DC4398 /* TGThing.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BD851C1577BFBC00DC4398 /* TGThing.m */; };
 		F6C2F7C315BD988F00F353F2 /* TGThingsTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C2F7C215BD988F00F353F2 /* TGThingsTableController.m */; };
 		F6C78BEC15BEEBBE00BBBC26 /* TGNormalTableVeiwCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C78BEB15BEEBBE00BBBC26 /* TGNormalTableVeiwCell.m */; };
-		F6C78BF015BEEC4500BBBC26 /* TGEditTableViewCellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C78BEF15BEEC4500BBBC26 /* TGEditTableViewCellCell.m */; };
+		F6C78BF015BEEC4500BBBC26 /* TGEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C78BEF15BEEC4500BBBC26 /* TGEditTableViewCell.m */; };
 		F6E1758A154C37710082E6C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E17589154C37710082E6C5 /* UIKit.framework */; };
 		F6E1758C154C37710082E6C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E1758B154C37710082E6C5 /* Foundation.framework */; };
 		F6E1758E154C37710082E6C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E1758D154C37710082E6C5 /* CoreGraphics.framework */; };
@@ -30,8 +30,8 @@
 		F6C2F7C215BD988F00F353F2 /* TGThingsTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGThingsTableController.m; sourceTree = "<group>"; };
 		F6C78BEA15BEEBBE00BBBC26 /* TGNormalTableVeiwCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGNormalTableVeiwCell.h; sourceTree = "<group>"; };
 		F6C78BEB15BEEBBE00BBBC26 /* TGNormalTableVeiwCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGNormalTableVeiwCell.m; sourceTree = "<group>"; };
-		F6C78BEE15BEEC4500BBBC26 /* TGEditTableViewCellCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGEditTableViewCellCell.h; sourceTree = "<group>"; };
-		F6C78BEF15BEEC4500BBBC26 /* TGEditTableViewCellCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGEditTableViewCellCell.m; sourceTree = "<group>"; };
+		F6C78BEE15BEEC4500BBBC26 /* TGEditTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; path = TGEditTableViewCell.h; sourceTree = "<group>"; };
+		F6C78BEF15BEEC4500BBBC26 /* TGEditTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGEditTableViewCell.m; sourceTree = "<group>"; };
 		F6E17585154C37710082E6C5 /* aPlane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aPlane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E17589154C37710082E6C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F6E1758B154C37710082E6C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,8 +77,8 @@
 				F6C2F7C215BD988F00F353F2 /* TGThingsTableController.m */,
 				F6C78BEA15BEEBBE00BBBC26 /* TGNormalTableVeiwCell.h */,
 				F6C78BEB15BEEBBE00BBBC26 /* TGNormalTableVeiwCell.m */,
-				F6C78BEE15BEEC4500BBBC26 /* TGEditTableViewCellCell.h */,
-				F6C78BEF15BEEC4500BBBC26 /* TGEditTableViewCellCell.m */,
+				F6C78BEE15BEEC4500BBBC26 /* TGEditTableViewCell.h */,
+				F6C78BEF15BEEC4500BBBC26 /* TGEditTableViewCell.m */,
 			);
 			name = table;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 				F6BD851D1577BFBC00DC4398 /* TGThing.m in Sources */,
 				F6C2F7C315BD988F00F353F2 /* TGThingsTableController.m in Sources */,
 				F6C78BEC15BEEBBE00BBBC26 /* TGNormalTableVeiwCell.m in Sources */,
-				F6C78BF015BEEC4500BBBC26 /* TGEditTableViewCellCell.m in Sources */,
+				F6C78BF015BEEC4500BBBC26 /* TGEditTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
