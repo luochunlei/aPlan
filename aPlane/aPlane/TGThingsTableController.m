@@ -84,9 +84,12 @@
     NSCalendar * calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDate * date = [calendar dateFromComponents:thing.datetime];
     NSString * strDate = [df stringFromDate:date];
+    
     cell.lblDate.text = strDate;
+    cell.txtDate.text = strDate;
 
     cell.lblContent.text = thing.content;
+    cell.txtContent.text = thing.content;
     
     /*
     //标题文字(这个以后用来显示类型)

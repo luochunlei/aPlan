@@ -11,7 +11,9 @@
 @implementation TGEditTableViewCell
 
 @synthesize lblContent = _lblContent;
+@synthesize txtContent = _txtContent;
 @synthesize lblDate = _lblDate;
+@synthesize txtDate = _txtDate;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -28,25 +30,53 @@
         _lblDate = [[UILabel alloc] initWithFrame:CGRectMake(10, 5, 320, heightOfDate)];
         _lblDate.textColor = [UIColor blackColor];
         
+        _txtDate = [[UITextView alloc] initWithFrame:CGRectMake(10, 5, 320, heightOfDate)];
+        _txtDate.textColor = [UIColor blackColor];
+        _txtDate.backgroundColor = [UIColor blackColor];
+        [_txtDate setHidden:YES];
         
         // 左下部是具体内容
         _lblContent = [[UILabel alloc] initWithFrame:CGRectMake(10, 5 + heightOfDate + 5, 320, 40)];
         _lblContent.textColor = [UIColor redColor];
         
+        _txtContent = [[UITextView alloc] initWithFrame:CGRectMake(10, 5 + heightOfDate + 5, 320, 40)];
+        _txtContent.textColor = [UIColor redColor];
+        _txtContent.backgroundColor = [UIColor blackColor];
+        [_txtContent setHidden:YES];
+        
+        //[_txtDate setUserInteractionEnabled:NO];
+        //[_txtContent setUserInteractionEnabled:NO];
+
         [self addSubview:_lblDate];
+        [self addSubview:_txtDate];
         [self addSubview:_lblContent];
+        [self addSubview:_txtContent];
 
     }
     return self;
 }
 
 
-// 选中后的动画。
+// 选中后的处理。
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
+    
+    if(selected) {
+        [_lblDate setHidden:YES];
+        [_lblContent setHidden:YES];
+        
+        // TODO 选中时，编辑框的背景色无效？为什么？
+        [_txtDate setHidden:NO];
+        [_txtContent setHidden:NO];
 
-    // Configure the view for the selected state
+    } else {
+        [_lblDate setHidden:NO];
+        [_lblContent setHidden:NO];
+        
+        [_txtDate setHidden:YES];
+        [_txtContent setHidden:YES];
+    }
 }
 
 @end

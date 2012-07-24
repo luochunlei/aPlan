@@ -8,12 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-//编辑状态下，表格的CELL
+//自定义的CELL，选中的情况下，就是编辑状态，非选中的情况下，就是只读状态。 
 @interface TGEditTableViewCell : UITableViewCell
 
 // 显示详细内容。
-@property(nonatomic,retain) UILabel *lblContent;  
+@property(nonatomic,retain) UILabel *lblContent; 
+
+@property(nonatomic,retain) UITextView *txtContent; 
+
 // 显示事件对应的时间。
 @property(nonatomic,retain) UILabel *lblDate; 
+
+@property(nonatomic,retain) UITextView *txtDate; 
 
 @end
