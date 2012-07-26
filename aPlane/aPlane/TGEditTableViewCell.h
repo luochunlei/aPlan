@@ -22,3 +22,4 @@
 @property(nonatomic,retain) UITextView *txtDate; 
 
 @end
+
