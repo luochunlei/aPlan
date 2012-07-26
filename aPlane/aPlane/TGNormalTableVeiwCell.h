@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+// NOTICE : 目前这个控件没有使用，留在以后修改。
+
 // 自定义的，一般情况下的表格一行的控件。
 // 显示样式：显示内容和对应的时间。
 @interface TGNormalTableVeiwCell : UITableViewCell

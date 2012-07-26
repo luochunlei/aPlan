@@ -103,6 +103,21 @@
     //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
      */
     
+    //颜色隔行变化
+    UIView *cellBackgroundView=[[UIView alloc]initWithFrame:cell.frame];
+    if (indexPath.row % 2==0) {
+        //浅灰色
+        cellBackgroundView.backgroundColor=[UIColor colorWithRed:0.88 green:0.88 blue:0.88 alpha:0.9];;
+    } else {
+        cellBackgroundView.backgroundColor=[UIColor whiteColor];
+    }
+    cell.backgroundView=cellBackgroundView;
+    
+    //设定选中的颜色。
+    UIView *cellSelectedView = [[UIView alloc]initWithFrame:cell.frame];
+    cellSelectedView.backgroundColor=[UIColor blueColor];
+    cell.selectedBackgroundView=cellSelectedView;
+    
     return cell;
 }
 
